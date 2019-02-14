@@ -9,7 +9,6 @@ var previous = 0;
 // 
 var resetAndStart = function () {
     // empty the crystal
-    $(".crystals").empty();
     // generating a new random number
     random_result = Math.floor(Math.random() * 69) + 30;
     // adding the number to the DOM
@@ -23,6 +22,8 @@ var resetAndStart = function () {
             "class": 'crystal',
             "data-random": random
         });
+        
+
         // pulling to the DOM
         $(".crystals").append(crystal);
     }
